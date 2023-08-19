@@ -17,4 +17,14 @@ export class User {
       lng: faker.location.longitude(),
     };
   }
+
+  content(): string {
+    return `<div>
+              <h1>Developer Information</h1>
+              <h2 style="justify-content: center; display: flex">Name: Auron Vila</h2>
+                <h3 style="justify-content: center; display: flex">
+                  <a href="https://github.com/auronvila">gitHub</a>
+                </h3>
+             </div>`;
+  }
 }
