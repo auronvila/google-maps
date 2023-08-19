@@ -1,6 +1,7 @@
 import { faker } from "@faker-js/faker";
+import { Markable } from "./CustomMap";
 
-export class Company {
+export class Company implements Markable {
   companyName: string;
   catchPhrase: string;
   location: {
@@ -16,7 +17,6 @@ export class Company {
     };
     this.catchPhrase = faker.company.catchPhrase();
   }
-
   content(): string {
     return `<div>
               <h1>Developer Information</h1>

@@ -1,6 +1,7 @@
 import { faker } from "@faker-js/faker";
+import { Markable } from "./CustomMap";
 
-export class User {
+export class User implements Markable {
   name: string;
   // here the object is not being created it is just being initialized and when we want to set a value for lat, lng
   // we need to create the object if we log it the value will be undefined.
